@@ -1,0 +1,10 @@
+.navbar {
+  border: 5px solid rgb(67, 115, 179);
+  font-size: 115%;
+  color: grey;
+}
+
+.link-nav {
+  text-decoration: none;
+  color: grey;
+}
