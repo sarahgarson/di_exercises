@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-image: url(/Users/sarahgarson/Documents/CodingVSDI/week1_class1/daily-challenge1/thor-daily-challenge1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: rgb(34, 33, 33);
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.links {
+  color: aliceblue;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-direction: row-reverse;
+}
+
+#characters-nav {
+  float: right;
+}
+
+#about-nav {
+  float: right;
+}
+
+#help-nav {
+  float: right;
+}
+
+header > h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin-left: 130px;
+  margin-top: 400px;
+  background-color: rgba(22, 17, 95, 0.3);
+  width: 60%;
+  color: aliceblue;
+}
+article > h2 {
+  margin-top: 30%;
+  font-size: 50px;
+  margin-left: 130px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: underline;
+}
+article > p {
+  margin: 150px 100px 100px 130px;
+  color: aliceblue;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgba(22, 17, 95, 0.5);
+}
+
+.youtube {
+  margin-left: 20%;
+}
+
+footer {
+  background-color: rgb(34, 33, 33);
+  margin-top: 200px;
+  color: aliceblue;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: aliceblue;
+  text-decoration: underline;
+}
+.footer-link:hover {
+  color: blue;
+}
