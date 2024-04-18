@@ -7,10 +7,10 @@
 /*this little piece of code is what fixed my problem of having a white space on the right side of the page*/
 html,
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -123,32 +123,11 @@ header > h3 {
 /*Now doing the article no1 part of the cv, where I show my experiences*/
 
 #experiences {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 130%;
-  color: rgb(33, 85, 90);
-  margin-top: 70px;
-  margin-bottom: 40px;
+  margin-top: 100px;
+  color: rgb(76, 136, 142);
+  font-size: 40px;
+  margin-bottom: 50px;
+  margin-left: 50px;
 }
 
-.up-left {
-  border: 1px solid rgb(33, 85, 90);
-  padding: 20px;
-  box-sizing: border-box;
-  color: rgb(87, 86, 86);
-  font-size: 20px;
-  line-height: 30px;
-  float: left;
-}
-
-.up-right {
-  border: 1px solid rgb(33, 85, 90);
-  padding: 20px;
-  box-sizing: border-box;
-  color: rgb(87, 86, 86);
-  font-size: 20px;
-  line-height: 30px;
-  float: right;
-}
+lo
