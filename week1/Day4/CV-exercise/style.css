@@ -19,13 +19,11 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-
   font-size: 115%;
   color: rgb(87, 86, 86);
   width: 100%;
   height: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0px 30px;
   padding-top: 20px;
   font-family: "Lora", serif;
   font-optical-sizing: auto;
@@ -50,11 +48,8 @@ body {
 /*Set up for the header with a picture of me as profile and a short description*/
 
 header {
-  margin-top: 80px;
-
-  border: 1px solid rgb(76, 136, 142);
-  padding: 100px;
-  box-sizing: border-box;
+  margin-top: 17%;
+  position: relative;
 }
 
 @media screen and (max-width: 800px) {
@@ -69,7 +64,7 @@ header {
   }
 }
 #first-p {
-  margin-bottom: 40px;
+  margin-bottom: 4%;
 }
 
 header > h3 {
@@ -79,14 +74,15 @@ header > h3 {
   font-style: normal;
   font-size: 200%;
   color: rgb(33, 85, 90);
+  margin-left: 12%;
 }
 
 .p-header {
   color: rgb(87, 86, 86);
-  line-height: 130%;
-  margin-top: 50px;
-  width: 90%;
-  margin-left: 20px;
+  line-height: 140%;
+  margin-top: 3%;
+  width: 85%;
+  margin-left: 12%;
   font-size: 150%;
 }
 
@@ -102,32 +98,98 @@ header > h3 {
   margin-left: 80px;
   border: 10px solid rgb(76, 136, 142);
 }
+
+@media screen and (max-width: 830px) {
+  .circle {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 #button1 {
+  margin-left: 6%;
+  background-color: white;
+  display: inline-block;
+}
+
+#button2 {
   margin-left: 40px;
   background-color: white;
+  display: inline-block;
 }
-.linkedin {
+
+.button-header {
   padding: 5px 10px;
   font-size: 110%;
-  color: grey;
+  color: rgb(50, 91, 95);
   text-decoration: none;
   margin-top: 50px;
   border-radius: 20px;
+  margin-bottom: 10%;
 }
 
-.linkedin:hover {
+.button-header:hover {
   border-color: rgb(76, 136, 142);
   color: rgb(76, 136, 142);
 }
 
 /*Now doing the article no1 part of the cv, where I show my experiences*/
-
-#experiences {
+article {
+  width: 100%;
   margin-top: 100px;
-  color: rgb(76, 136, 142);
-  font-size: 40px;
-  margin-bottom: 50px;
-  margin-left: 50px;
 }
 
-lo
+article > h3 {
+  color: rgb(33, 85, 90);
+  font-size: 150%;
+  text-decoration: underline;
+  margin-left: 10%;
+  margin-bottom: 6%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.up-left,
+.up-right {
+  width: 50%;
+  padding: 20px;
+  font-size: 130%;
+  color: rgb(87, 86, 86);
+}
+
+@media screen and (min-width: 250px) {
+  article {
+    margin-top: 700px; /* Adjust margin-top for smaller screens */
+  }
+
+  .up-left,
+  .up-right {
+    width: 50%; /* On screens wider than 250px, make each item take 50% width */
+  }
+}
+@media screen and (min-width: 600px) {
+  article {
+    margin-top: 400px; /* Adjust margin-top for smaller screens */
+  }
+
+  .up-left,
+  .up-right {
+    width: 50%; /* On screens wider than 600px, make each item take 50% width */
+  }
+}
+
+@media screen and (min-width: 800px) {
+  article {
+    margin-top: 80px;
+  }
+}
