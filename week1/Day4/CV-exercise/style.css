@@ -48,7 +48,7 @@ body {
 /*Set up for the header with a picture of me as profile and a short description*/
 
 header {
-  margin-top: 17%;
+  margin-top: 13%;
   position: relative;
 }
 
@@ -97,6 +97,7 @@ header > h3 {
   margin-right: 100px;
   margin-left: 80px;
   border: 10px solid rgb(76, 136, 142);
+  position: relative;
 }
 
 @media screen and (max-width: 830px) {
@@ -113,8 +114,42 @@ header > h3 {
   }
 }
 
+.circle:hover {
+  transform: scale(1.05);
+}
+/*Added skils and languages to the header as it is part of 'About' me, I decided to make the bullet points in the same line by writting the below*/
+
+.bullet-list {
+  margin-top: 9%;
+  color: rgb(87, 84, 84);
+
+  margin-bottom: 4%;
+}
+
+@media screen and (min-width: 400px) {
+  .bullet-list ul {
+    margin-left: 30%;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .bullet-list ul {
+    marging-left: 40%;
+  }
+}
+
+.bullet-list ul {
+  margin-top: 5%;
+  font-size: 150%;
+}
+#skills {
+  margin-left: 30%;
+  font-size: 160%;
+  text-decoration: underline;
+}
+
 #button1 {
-  margin-left: 6%;
+  margin-left: 50%;
   background-color: white;
   display: inline-block;
 }
@@ -138,6 +173,8 @@ header > h3 {
 .button-header:hover {
   border-color: rgb(76, 136, 142);
   color: rgb(76, 136, 142);
+  background-color: azure;
+  transform: scale(1.05);
 }
 
 /*Now doing the article no1 part of the cv, where I show my experiences*/
@@ -146,12 +183,12 @@ article {
   margin-top: 100px;
 }
 
-article > h3 {
+.sub-title-h3 {
   color: rgb(33, 85, 90);
-  font-size: 150%;
+  font-size: 180%;
   text-decoration: underline;
-  margin-left: 10%;
-  margin-bottom: 6%;
+  margin-left: 7%;
+  margin-bottom: 5%;
 }
 
 .row {
@@ -165,6 +202,7 @@ article > h3 {
   padding: 20px;
   font-size: 130%;
   color: rgb(87, 86, 86);
+  margin-left: 5%;
 }
 
 @media screen and (min-width: 250px) {
@@ -174,7 +212,7 @@ article > h3 {
 
   .up-left,
   .up-right {
-    width: 50%; /* On screens wider than 250px, make each item take 50% width */
+    width: 40%; /* On screens wider than 250px, make each item take 50% width */
   }
 }
 @media screen and (min-width: 600px) {
@@ -184,7 +222,7 @@ article > h3 {
 
   .up-left,
   .up-right {
-    width: 50%; /* On screens wider than 600px, make each item take 50% width */
+    width: 40%; /* On screens wider than 600px, make each item take 50% width */
   }
 }
 
@@ -192,4 +230,69 @@ article > h3 {
   article {
     margin-top: 80px;
   }
+}
+
+.p-experience {
+  margin-top: 5%;
+}
+
+.up-left > h5,
+.up-right > h5 {
+  font-size: 110%;
+}
+
+.date {
+  font-size: 70%;
+  margin-top: 15px;
+}
+
+/* Writing noe the education part of my CV, I used the classes of up-left and up-right so the text takes the same style from the paragraphs of Experience as above*/
+
+/* I did encounter another issues where the paragraphs are not next to each other and when I try using the row element class from the article part it did not work, the code below is how I got the paragraphs to alifn next to each other*/
+
+.education {
+  margin-top: 10%;
+  width: 100%;
+  margin-bottom: 20%;
+}
+
+#up-left2 {
+  width: 41%;
+  float: left;
+  margin-bottom: 100px;
+}
+
+#up-right2 {
+  width: 49%;
+  float: right;
+  margin-bottom: 100px;
+}
+
+/*ICON CONTACTS*/
+.contact {
+  margin-bottom: 20%;
+}
+
+.contact > h3 {
+  color: rgb(87, 86, 86);
+  margin-bottom: 10%;
+  text-align: center;
+}
+.icon-link1 {
+  font-size: 450%;
+  margin-left: 20%;
+  color: rgb(76, 136, 142);
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: rgb(144, 155, 155);
+  color: aliceblue;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 50px 0px;
+  text-align: center;
 }

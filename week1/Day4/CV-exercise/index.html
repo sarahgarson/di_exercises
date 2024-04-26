@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
     <title>CV</title>
   </head>
@@ -39,6 +43,27 @@
         Engineering, fluent in English, Hebrew and Portuguese, team player,
         driven by an unyielding curiosity and a rapid aptitude for learning.
       </p>
+      <div class="bullet-list">
+        <p id="skills" class="p-header"><b>Skills</b></p>
+
+        <ul>
+          <li>Fast learner and adapt to any work environment.</li>
+          <li>Extremely motivated and eager to learn.</li>
+          <li>
+            Team player and exceptionally focused on any demanded working goal.
+          </li>
+          <li>Exceptional in finding troubleshooting solutions.</li>
+        </ul>
+
+        <p id="skills" class="p-header"><b>Languages</b></p>
+
+        <ul>
+          <li>English</li>
+          <li>Portuguese</li>
+          <li>Hebrew</li>
+        </ul>
+      </div>
+
       <button id="button1" class="button-header">
         <a
           class="button-header"
@@ -53,15 +78,18 @@
       </button>
     </header>
 
-    <article>
-      <h3>Experience</h3>
+    <article id="resume">
+      <h3 class="sub-title-h3">Experience</h3>
       <div class="row">
         <div class="up-left">
           <h5>
             Practi (JE), Tel Aviv — Technical Support Product Specialist of
             Software (Tier 1)
           </h5>
-          <p>
+          <p class="date">02/2021 - 08/2021</p>
+          <br />
+
+          <p class="p-experience">
             The job itself included technical software support and report
             analysis to partners using the company's software. The job required
             fast thinking, communication abilities in fluent english, software
@@ -71,13 +99,75 @@
         </div>
         <div class="up-right">
           <h5>I.A.F, Ramon — Mechanic specialized in the Boeing AH-64</h5>
-          <p>
+          <p class="date">08/2021 - 08/2023</p>
+          <br />
+          <p class="p-experience">
             Mechanical Technician for both versions of the Boeing Apache AH-64.
             Specialized in the hydraulic, pneumatic and mechanical systems of
-            the helicopter.
+            the helicopter. The role demanded proficient English skills as
+            instructions were provided by the American company Boeing. It also
+            required self-directed learning, adaptability and creativity when it
+            came to troubleshooting. Collaboration within the team was
+            essential, along with the ability to work independently on tasks and
+            deliver results efficiently.
           </p>
         </div>
       </div>
     </article>
+    <section class="education">
+      <h3 class="sub-title-h3">Education</h3>
+      <div class="up-left" id="up-left2">
+        <h5>Handassaim Tel Aviv —Engineering College - Diploma</h5>
+        <p class="date">09/2019 - 06/2021</p>
+        <br />
+        <p>
+          Finished a 2 year Mechanical Engineering course with specialization in
+          computerized design including production, and afterwards directed to
+          the Technical Area of the Israeli Airforce.
+        </p>
+      </div>
+      <div class="up-right" id="up-right2">
+        <h5>
+          Mosenzon Elite High School, Hod Hasharon — full high school diploma
+        </h5>
+        <p class="date">09/2015 - 06/2019</p>
+        <br />
+        <p>
+          4 years studying in an international Boarding School in English.
+          Finished with a full High School Certificate, average of 87 with
+          Portuguese as an extra language.
+        </p>
+      </div>
+      <div class="up-left" id="DI-div">
+        <h5>
+          Developers Institute (DI) - Full-Stack Development Student (front-end
+          and back-end)
+        </h5>
+        <p class="date">31/03/2024 - current day</p>
+        <br />
+        <p>
+          Certainly! Here's a refined version: "I am currently enrolled in the
+          Full-Stack Development Bootcamp at the Developers Institute, where we
+          are honing our expertise in JavaScript, Python, HTML, CSS, React, and
+          other essential full-stack tools. The program not only equips us with
+          technical skills but also provides comprehensive training in utilizing
+          GitHub, Git, terminal commands, VScode, and troubleshooting techniques
+          to effectively resolve any coding challenges."
+        </p>
+      </div>
+    </section>
+    <div id="contact" class="contact">
+      <h3>Contact:</h3>
+      <a
+        href="https://www.linkedin.com/in/sarah-garson-3563161bb/"
+        class="icon-link1"
+        ><i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="icon-link2"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Sarah Garson. All rights reserved.</p>
+    </footer>
   </body>
 </html>
