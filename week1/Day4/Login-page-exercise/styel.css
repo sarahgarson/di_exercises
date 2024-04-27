@@ -1,43 +1,106 @@
-header {
-  text-align: center;
-  margin-right: 50%;
-  margin-top: 10%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+body,
+html {
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* Align items with space in between */
+  align-items: center; /* Center items vertically */
+  /* Add some padding for better spacing */
+}
+
+.login-container {
+  flex: 1;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
 .login-container input[type="text"],
 .login-container input[type="password"] {
-  width: 50%;
+  width: 500px;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 23px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.email-password {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .email-password {
+    text-align: center;
+    margin-right: 1000px;
+  }
 }
 
 div > h2 {
   font-size: 50px;
 }
 
-right-pic {
-  position: relative;
-  height: 100%;
+.container {
+  color: #807b7b;
+  display: inline-flex;
 }
-
-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-height: 100%;
-  width: 50%;
+.checkbox-right {
+  color: #807b7b;
+  display: inline-flex;
+  padding-left: 150px;
 }
 
 .button-login {
-  margin-top: 60px;
-  width: 50%;
+  margin-top: 40px;
+  width: 75%;
   padding: 2%;
-  font-size: 20px;
-  background-color: rgb(154, 14, 179);
+  font-size: 13px;
+  background-color: rgb(174, 5, 204);
   color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 2px;
 }
 
 .connect-with {
   font: 20px;
+  margin-top: 40px;
+  color: #807b7b;
+}
+
+footer {
+  color: #807b7b;
+  margin-left: 28%;
+}
+
+.icons {
+  color: #807b7b;
+  font-size: 160%;
+  margin-top: 8%;
+}
+
+.container-right {
+  flex: 1;
+  text-align: center;
+
+  padding-top: 10%;
+  background-color: purple;
+  height: 100vh;
+}
+
+.icon-right {
+  font-size: 700%;
+  color: #807b7b;
 }
