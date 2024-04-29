@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-image: url(/Users/sarahgarson/Documents/DI_Bootcamp/week1/Day5/Daily-challenge/thor-daily-challenge1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: rgb(34, 33, 33);
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    background-color: lightseagreen;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    background-color: black;
+  }
+}
+
+.links {
+  color: aliceblue;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .links {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .links {
+    color: white;
+  }
+}
+
+#characters-nav {
+  float: right;
+}
+
+#about-nav {
+  float: right;
+}
+
+#help-nav {
+  float: right;
+}
+
+header > h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin-left: 10%;
+  margin-top: 20%;
+  background-color: rgba(22, 17, 95, 0.3);
+  width: 60%;
+  color: aliceblue;
+}
+
+@media screen and (min-width: 768px) {
+  header > h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header > h1 {
+    font-size: 35px;
+  }
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  article {
+    flex-direction: column; /* Arrange items in a column on smaller screens */
+  }
+  h2 {
+    margin-right: 0;
+  }
+}
+
+article > h2 {
+  margin-top: 10%;
+  font-size: 50px;
+  margin-left: 130px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+
+article > p {
+  margin: 150px 100px 100px 130px;
+  color: aliceblue;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgba(22, 17, 95, 0.5);
+}
+
+.youtube {
+  margin-left: 30%;
+  margin-right: 20%;
+}
+
+footer {
+  background-color: rgb(34, 33, 33);
+  margin-top: 200px;
+  color: aliceblue;
+  text-align: center;
+  line-height: 35px;
+  font-size: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: aliceblue;
+  text-decoration: underline;
+}
+.footer-link:hover {
+  color: blue;
+}
