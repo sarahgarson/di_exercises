@@ -100,17 +100,10 @@ header > h3 {
   position: relative;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 860px) {
   .circle {
     height: 200px;
     width: 200px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .circle {
-    width: 200px;
-    height: 200px;
   }
 }
 
@@ -132,12 +125,6 @@ header > h3 {
   }
 }
 
-@media screen and (min-width: 1050px) {
-  .bullet-list ul {
-    marging-left: 40%;
-  }
-}
-
 .bullet-list ul {
   margin-top: 5%;
   font-size: 150%;
@@ -152,12 +139,14 @@ header > h3 {
   margin-left: 50%;
   background-color: white;
   display: inline-block;
+  align-items: center;
 }
 
 #button2 {
-  margin-left: 40px;
+  margin-left: 50px;
   background-color: white;
   display: inline-block;
+  align-items: center;
 }
 
 .button-header {
@@ -167,7 +156,6 @@ header > h3 {
   text-decoration: none;
   margin-top: 50px;
   border-radius: 20px;
-  margin-bottom: 10%;
 }
 
 .button-header:hover {
@@ -180,7 +168,10 @@ header > h3 {
 /*Now doing the article no1 part of the cv, where I show my experiences*/
 article {
   width: 100%;
-  margin-top: 100px;
+}
+
+#resume {
+  margin-top: 10%;
 }
 
 .sub-title-h3 {
@@ -189,6 +180,12 @@ article {
   text-decoration: underline;
   margin-left: 7%;
   margin-bottom: 5%;
+}
+
+@media screen and (max-width: 200px) {
+  .sub-title-h3 {
+    margin-top: 50%;
+  }
 }
 
 .row {
@@ -203,11 +200,12 @@ article {
   font-size: 130%;
   color: rgb(87, 86, 86);
   margin-left: 5%;
+  line-height: 140%;
 }
 
-@media screen and (min-width: 250px) {
+@media screen and (min-width: 100px) {
   article {
-    margin-top: 700px; /* Adjust margin-top for smaller screens */
+    margin-top: 800px; /* Adjust margin-top for smaller screens */
   }
 
   .up-left,
@@ -215,9 +213,21 @@ article {
     width: 40%; /* On screens wider than 250px, make each item take 50% width */
   }
 }
+
+@media screen and (min-width: 500px) {
+  article {
+    margin-top: 1000px; /* Adjust margin-top for smaller screens */
+  }
+
+  .up-left,
+  .up-right {
+    width: 40%; /* On screens wider than 250px, make each item take 50% width */
+  }
+}
+
 @media screen and (min-width: 600px) {
   article {
-    margin-top: 400px; /* Adjust margin-top for smaller screens */
+    margin-top: 900px; /* Adjust margin-top for smaller screens */
   }
 
   .up-left,
@@ -253,7 +263,8 @@ article {
 .education {
   margin-top: 10%;
   width: 100%;
-  margin-bottom: 20%;
+  margin-bottom: 13%;
+  margin-right: 14%;
 }
 
 #up-left2 {
@@ -271,17 +282,56 @@ article {
 /*ICON CONTACTS*/
 .contact {
   margin-bottom: 20%;
+  text-align: center;
 }
 
 .contact > h3 {
   color: rgb(87, 86, 86);
   margin-bottom: 10%;
   text-align: center;
+  font-size: 200%;
+}
+
+.icon-link2 {
+  font-size: 500%;
+
+  color: rgb(76, 136, 142);
+}
+
+.icon-link3 {
+  font-size: 500%;
+  padding-left: 10%;
+  color: rgb(76, 136, 142);
+}
+
+.icon-link4 {
+  font-size: 500%;
+  padding-left: 10%;
+  color: rgb(76, 136, 142);
+}
+
+.icon-link4:hover {
+  cursor: pointer;
 }
 .icon-link1 {
-  font-size: 450%;
-  margin-left: 20%;
+  font-size: 500%;
+  padding-left: 10%;
   color: rgb(76, 136, 142);
+}
+
+/*PORTIFOLIO part of the code*/
+
+#portifolio {
+  margin-bottom: 15%;
+}
+
+.p-portifolio {
+  width: 90%;
+  padding: 20px;
+  font-size: 130%;
+  color: rgb(87, 86, 86);
+  margin-left: 5%;
+  line-height: 140%;
 }
 
 /*FOOTER*/

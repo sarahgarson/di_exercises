@@ -18,6 +18,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
+    <script>
+      function copyPhoneNumber() {
+        var phoneNumber = "+972-054-5207454"; // Replace this with your phone number
+        navigator.clipboard.writeText(phoneNumber).then(
+          function () {
+            alert("Phone number copied to clipboard: " + phoneNumber);
+          },
+          function (error) {
+            console.error("Failed to copy phone number: ", error);
+          }
+        );
+      }
+    </script>
+
     <title>CV</title>
   </head>
   <body>
@@ -63,23 +77,27 @@
           <li>Hebrew</li>
         </ul>
       </div>
-
       <button id="button1" class="button-header">
         <a
           class="button-header"
           href="https://www.linkedin.com/in/sarah-garson-3563161bb/"
+          target="_blank"
           >LinkedIn</a
         >
       </button>
       <button id="button2" class="button-header">
-        <a class="button-header" href="https://github.com/sarahgarson">
+        <a
+          class="button-header"
+          href="https://github.com/sarahgarson"
+          target="_blank"
+        >
           GitHub</a
         >
       </button>
     </header>
 
     <article id="resume">
-      <h3 class="sub-title-h3">Experience</h3>
+      <h3 class="sub-title-h3">Experience:</h3>
       <div class="row">
         <div class="up-left">
           <h5>
@@ -115,7 +133,7 @@
       </div>
     </article>
     <section class="education">
-      <h3 class="sub-title-h3">Education</h3>
+      <h3 class="sub-title-h3">Education:</h3>
       <div class="up-left" id="up-left2">
         <h5>Handassaim Tel Aviv —Engineering College - Diploma</h5>
         <p class="date">09/2019 - 06/2021</p>
@@ -146,24 +164,55 @@
         <p class="date">31/03/2024 - current day</p>
         <br />
         <p>
-          Certainly! Here's a refined version: "I am currently enrolled in the
-          Full-Stack Development Bootcamp at the Developers Institute, where we
-          are honing our expertise in JavaScript, Python, HTML, CSS, React, and
-          other essential full-stack tools. The program not only equips us with
-          technical skills but also provides comprehensive training in utilizing
-          GitHub, Git, terminal commands, VScode, and troubleshooting techniques
-          to effectively resolve any coding challenges."
+          I am currently enrolled in the Full-Stack Development Bootcamp at the
+          Developers Institute, where we are elevating our expertise in
+          JavaScript, Python, HTML, CSS, React, and other essential full-stack
+          tools. The program not only equips us with technical skills but also
+          provides comprehensive training in utilizing GitHub, Git, terminal
+          commands, VScode, and troubleshooting techniques to effectively
+          resolve any coding challenges.
         </p>
       </div>
     </section>
+
+    <section id="portifolio">
+      <h3 class="sub-title-h3">Portifolio:</h3>
+      <p class="p-portifolio">
+        <b>Handassaim Mechanical Engineering Final Project: </b>My final project
+        during my Mechanical Engineering course was directed to the worldwide
+        Wild Fires, where I designed a machine equipped to help authorities gain
+        control over wild fires and help save lifes.
+      </p>
+      <p class="p-portifolio">
+        <b>Tribute Website (HTML and CSS project):</b> In my initial project,
+        available on my GitHub repository, I was tasked with crafting a tribute
+        website utilizing my proficiency in HTML and CSS prior to my Bootcamp
+        education. You're welcome to explore my GitHub repository to examine the
+        HTML and CSS code files for this project, as well as any other projects
+        I've undertaken, including this CV.
+      </p>
+    </section>
+
     <div id="contact" class="contact">
       <h3>Contact:</h3>
+
+      <a href="mailto:sarah.garson.santos@gmail.com" class="icon-link2"
+        ><i class="fas fa-envelope"></i
+      ></a>
+      <a
+        href="https://wa.me/9720545207454?text=Hello%20there!"
+        class="icon-link3"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+      <span class="icon-link4" class="phone-icon" onclick="copyPhoneNumber()"
+        ><i class="fas fa-phone-volume"></i
+      ></span>
       <a
         href="https://www.linkedin.com/in/sarah-garson-3563161bb/"
         class="icon-link1"
+        target="_blank"
         ><i class="fab fa-linkedin"></i>
       </a>
-      <a href="" class="icon-link2"><i class="fa-solid fa-envelope"></i></a>
     </div>
 
     <footer>
