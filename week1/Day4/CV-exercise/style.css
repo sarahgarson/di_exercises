@@ -350,6 +350,14 @@ article {
   line-height: 140%;
 }
 
+.tribute-link {
+  color: rgb(87, 86, 86);
+}
+
+.tribute-link:hover {
+  color: rgb(76, 136, 142);
+}
+
 /*FOOTER*/
 
 footer {
