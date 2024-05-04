@@ -91,7 +91,7 @@ header > h3 {
   height: 400px;
   border-radius: 50%;
   overflow: hidden;
-  background-image: url(/Users/sarahgarson/Documents/DI_Bootcamp/week1/Day4/CV-exercise/cv-picture.jpeg);
+  background-image: url(cv-picture.jpeg);
   background-size: cover;
   float: left;
   margin-right: 100px;
