@@ -58,9 +58,9 @@ header {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   header {
-    height: 100px;
+    height: 200px;
   }
 }
 #first-p {
@@ -182,18 +182,28 @@ article {
   margin-bottom: 5%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 500px) {
+  #resume {
+    padding-top: 160%;
+  }
+}
+@media screen and (min-width: 650px) {
   #resume {
     padding-top: 100%;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (min-width: 800px) {
   #resume {
-    padding-top: 100%;
+    padding-top: 6%;
   }
 }
 
+@media screen and (max-width: 500px) {
+  #resume {
+    padding-top: 300%;
+  }
+}
 .row {
   display: flex;
   flex-wrap: wrap;
