@@ -182,9 +182,15 @@ article {
   margin-bottom: 5%;
 }
 
-@media screen and (max-width: 200px) {
-  .sub-title-h3 {
-    margin-top: 50%;
+@media screen and (max-width: 800px) {
+  #resume {
+    padding-top: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #resume {
+    padding-top: 100%;
   }
 }
 
