@@ -1,0 +1,91 @@
+body {
+  background-image: url("milad-fakurian-Glel-RswQqM-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1150px) {
+  body {
+    background-repeat: repeat;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 300%;
+  margin-top: 5%;
+  width: 55%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: rgb(41, 41, 41);
+}
+
+.first-numbers {
+  grid-area: a;
+  color: rgb(87, 65, 187);
+  font-size: 300%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900px;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+.second-numbers {
+  grid-area: b;
+  color: rgb(87, 65, 187);
+  font-size: 300%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900px;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+.third-numbers {
+  grid-area: c;
+  color: rgb(87, 65, 187);
+  font-size: 300%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900px;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+.business {
+  grid-area: d;
+  color: rgb(63, 63, 63);
+  text-transform: uppercase;
+}
+.active {
+  grid-area: e;
+  color: rgb(63, 63, 63);
+  text-transform: uppercase;
+}
+.sold {
+  grid-area: f;
+  color: rgb(63, 63, 63);
+  text-transform: uppercase;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "a b c"
+    "d e f";
+  gap: 20px;
+  grid-template-columns: repeat(3, 400px);
+  margin-top: 2%;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
