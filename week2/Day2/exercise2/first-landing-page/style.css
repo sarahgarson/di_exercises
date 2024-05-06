@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url(olivia-bliss-HTnycx0h_kk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 7%;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1550px) {
+  body {
+    background-repeat: repeat;
+  }
+}
+
+/*NAV BAR SECTION*/
+
+nav {
+  background-color: rgb(3, 92, 92);
+  color: white;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8%;
+}
+
+.navbar > p {
+  margin-right: 1.5%;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 5%;
+  margin-top: 0.6%;
+}
+
+.button-nav {
+  background-color: rgb(53, 169, 242);
+  color: aliceblue;
+  padding: 10px;
+  border: 1px white;
+  text-transform: uppercase;
+  border-radius: 5%;
+  box-shadow: 3px whitesmoke;
+}
+
+.button-nav:hover {
+  cursor: pointer;
+  background-color: rgb(127, 234, 255);
+}
+
+/*ADDING CONTENT TO THE PAGE*/
+
+.download {
+  color: white;
+  text-align: center;
+  font-size: 300%;
+  margin-bottom: 5%;
+}
+
+/*FORM PART OF THE PAGE*/
+
+.first {
+  grid-area: a;
+}
+
+#firstname {
+  width: 100%;
+  border: 1px white;
+  height: 60%;
+  margin-top: 3%;
+  border-radius: 5px;
+  box-shadow: 1px 2px rgb(215, 213, 213);
+}
+
+.second {
+  grid-area: b;
+}
+
+#lastname {
+  width: 100%;
+  border: 1px white;
+  height: 60%;
+  margin-top: 3%;
+  border-radius: 5px;
+  box-shadow: 1px 2px rgb(215, 213, 213);
+}
+.third {
+  grid-area: c;
+}
+
+#email {
+  width: 100%;
+  border: 1px white;
+  height: 60%;
+  margin-top: 3%;
+  border-radius: 5px;
+  box-shadow: 1px 2px rgb(215, 213, 213);
+}
+
+.policy {
+  color: rgb(50, 102, 225);
+}
+
+.policy:hover {
+  color: rgb(255, 255, 255);
+}
+
+.fourth {
+  grid-area: d;
+}
+
+#phone {
+  width: 100%;
+  border: 1px white;
+  height: 60%;
+  margin-top: 3%;
+  border-radius: 5px;
+  box-shadow: 1px 2px rgb(215, 213, 213);
+}
+
+.fifth {
+  grid-area: e;
+}
+
+#website {
+  width: 100%;
+  border: 1px white;
+  height: 60%;
+  margin-top: 3%;
+  border-radius: 5px;
+  box-shadow: 1px 2px rgb(215, 213, 213);
+}
+
+.sixth {
+  grid-area: f;
+}
+
+#company {
+  width: 100%;
+  border: 1px white;
+  height: 60%;
+  margin-top: 3%;
+  border-radius: 5px;
+  box-shadow: 1px 2px rgb(215, 213, 213);
+}
+
+.seventh {
+  grid-area: g;
+}
+
+.eighth {
+  grid-area: h;
+}
+
+.options {
+  width: 100%;
+  border: 1px white;
+  height: 60%;
+  margin-top: 3%;
+  border-radius: 5px;
+  box-shadow: 1px 2px rgb(215, 213, 213);
+}
+
+.text-services {
+  margin-top: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g g g"
+    "h h h";
+  row-gap: 10%;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(4, 50px);
+  column-gap: 5%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 5%;
+  margin-bottom: 20%;
+  margin-right: 4%;
+}
+
+@media screen and (max-width: 550px) {
+  .grid-container {
+    margin-left: 35%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  form {
+    margin-left: 15%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "a a a"
+      "b b b"
+      "c c c"
+      "d d d"
+      "e e e"
+      "f f f"
+      "g g g"
+      "h h h";
+    margin-bottom: 60%;
+  }
+
+  #firstname {
+    width: 50%;
+    border: 1px white;
+    height: 40%;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(215, 213, 213);
+  }
+
+  #lastname {
+    width: 50%;
+    border: 1px white;
+    height: 40%;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(215, 213, 213);
+  }
+
+  #email {
+    width: 50%;
+    border: 1px white;
+    height: 40%;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(215, 213, 213);
+  }
+
+  #phone {
+    width: 50%;
+    border: 1px white;
+    height: 40%;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(215, 213, 213);
+  }
+
+  #website {
+    width: 50%;
+    border: 1px white;
+    height: 40%;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(215, 213, 213);
+  }
+
+  #company {
+    width: 50%;
+    border: 1px white;
+    height: 40%;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(215, 213, 213);
+  }
+
+  .options {
+    width: 50%;
+    border: 1px white;
+    height: 40%;
+    margin-top: 3%;
+    border-radius: 5px;
+    box-shadow: 1px 2px rgb(215, 213, 213);
+  }
+
+  .button {
+    margin-top: 100%;
+  }
+}
+
+.download-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.button {
+  padding: 13px 23px;
+  background-color: rgb(53, 169, 242);
+  color: white;
+  font-size: 110%;
+  border-radius: 10px;
+  border: 1px white;
+}
+
+@media screen and (max-width: 1300px) {
+  .button {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .button {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    margin-top: 50%;
+  }
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(127, 234, 255);
+}
+
+.click-button {
+  margin-top: 3%;
+}

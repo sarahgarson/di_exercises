@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <p><b>unburden yourself from the weight of email overload!</b></p>
+      <button class="button-nav">Learn How</button>
+    </nav>
+
+    <div>
+      <h2 class="download">Download now</h2>
+    </div>
+
+
+
+    <form>
+    <section class="grid-container">
+      
+        <div class="first" class="form-group">
+          <p>First Name*</p>
+          <label for="firstname"></label>
+          <input type="text" id="firstname" name="firstname" required />
+        </div>
+
+        <div class="second" class="form-group">
+          <p>Last Name*</p>
+          <label for="lastname"></label>
+          <input type="text" id="lastname" name="lastname" required />
+        </div>
+
+        <div class="third" class="form-group">
+          <p>Email <span class="policy"> (Privacy Policy)</span>*</p>
+          <label for="email"></label>
+          <input type="text" id="email" name="email" required />
+        </div>
+
+        <div class="fourth" class="form-group">
+          <p>Phone Number*</p>
+          <label for="phone"></label>
+          <input type="tel" id="phone" name="phonenumber" required />
+        </div>
+
+        <div class="fifth" class="form-group">
+          <p>Website Url*</p>
+          <label for="website"></label>
+          <input type="url" id="website" name="website" required />
+        </div>
+
+        <div class="sixth" class="form-group">
+          <p>Company Name*</p>
+          <label for="company"></label>
+          <input type="text" id="company" name="company" required />
+        </div>
+
+        <div class="seventh" class="form-group">
+          <p>How many employees work there?*</p>
+          <input class="options" list="number" name="number" />
+          <datalist id="number">
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+          </datalist>
+        </div>
+        <div class="eighth" class="form-group">
+        <div class="text-services">
+          <p>Does your company sell any of the following services:</p>
+          <br>
+          <ul>
+            <li>Web design</li>
+            <br>
+            <li>online marketing</li>
+            <br>
+            <li>seo/sem</li>
+            <br>
+            <li>Adventising agency services*</li>
+            
+          </ul>
+        </div>
+        
+        
+          <input class="options"
+          list="services" name="services" />
+          <datalist id="services">
+            <option value="Web Design"></option>
+            <option value="Online Marketing"></option>
+            <option value="SEO/SEM"></option>
+            <option value="Adventising Angency Services"></option>
+            
+          </datalist>
+        
+        <br>
+        <div  class="click-button">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label  for="vehicle1"> subscribe to hubspot's marketing blog </label><br>
+        </div>
+      </div>
+    
+      
+  </form>
+  
+    </section>
+
+    <div class="download-button">
+      <button class="button">DOWNLOAD NOW</button>
+    </div>
+    
+  </body>
+</html>
