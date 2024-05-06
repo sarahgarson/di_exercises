@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*this little piece of code is what fixed my problem of having a white space on the right side of the page*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+/*NAV BAR PART*/
+
+.navbar {
+  color: grey;
+  padding: 10px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.left-side {
+  font-size: 120%;
+}
+
+.right-item {
+  padding-right: 30px;
+}
+
+.right-item:hover {
+  color: rgb(32, 32, 115);
+}
+
+nav > button {
+  border: 3px solid rgb(60, 128, 206);
+  border-radius: 5px;
+}
+
+nav > button:hover {
+  color: rgb(32, 32, 115);
+  cursor: pointer;
+}
+
+.button-nav {
+  padding: 10px;
+  background-color: white;
+  color: rgb(27, 111, 138);
+  padding: 10px 15px;
+}
+
+.icon-right {
+  padding-right: 15px;
+}
+
+.icon-right:hover {
+  color: rgb(32, 32, 115);
+}
+
+.left-item {
+  padding-left: 30px;
+}
+
+.left-item:hover {
+  color: rgb(32, 32, 115);
+}
+
+.left-side > i {
+  color: rgb(32, 32, 115);
+}
+
+/*HEADER PART*/
+
+.title-header {
+  text-align: center;
+  margin-top: 5%;
+  color: rgb(92, 92, 92);
+}
+
+header > h1 {
+  padding: 15px 10px;
+}
+
+header > p {
+  padding: 10px 10px;
+}
+
+header > form {
+  padding: 10px 10px;
+}
+
+#prices {
+  color: blue;
+  border: 2px solid lightblue;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.pricing {
+  color: grey;
+}
+
+/*CARDS PART OF THE CODE*/
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  column-gap: 80px;
+  margin-top: 6%;
+  margin-bottom: 10%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  line-height: 180%;
+}
+
+.top-part {
+  text-align: center;
+}
+
+.fa-user,
+.fa-user-tie,
+.fa-users {
+  font-size: 300%;
+  padding: 10px 10px;
+}
+
+.cards-button {
+  padding: 10px 10px;
+  margin: 10px 10px;
+  background-color: rgb(78, 167, 78);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.cards-button-sales {
+  padding: 10px 10px;
+  margin: 10px 10px;
+  background-color: rgb(78, 167, 78);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 37%;
+}
+
+.dollars {
+  font-size: 300%;
+}
+
+.complete {
+  margin-bottom: 20px;
+}
+
+.no-credit-card {
+  color: grey;
+  font-size: 90%;
+}
+
+.elite-get {
+  color: rgb(158, 157, 157);
+  font-size: 200%;
+  margin-bottom: 5%;
+}
+
+/*CHAT WING ON THE CORNER OF THE SCREEN*/
+
+.chat-wing {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  z-index: 1000;
+}
+
+.chat-icon {
+  cursor: pointer;
+}
+
+.chat-popup {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  width: 300px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.chat-wing:hover .chat-popup {
+  display: block;
+}
