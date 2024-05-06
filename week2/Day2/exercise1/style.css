@@ -79,13 +79,113 @@ header {
   grid-template-areas:
     "a b c"
     "d e f";
-  gap: 20px;
-  grid-template-columns: repeat(3, 400px);
-  margin-top: 2%;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  row-gap: 0;
+  column-gap: 250px;
+  margin-top: 5%;
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "a "
+      "d"
+      "b"
+      "e"
+      "c"
+      "f";
+    gap: 40px;
+    grid-template-rows: repeat(3, 50px);
+  }
 }
 
 .center {
   display: flex;
+
   justify-content: center;
+  align-items: center;
+}
+
+/*CARDS PART*/
+
+/*.first-card{
+  grid-area: a;
+}
+.second-card{
+  grid-area: b;
+}
+.third-card{
+  grid-area: c;
+}*/
+
+.grid-container-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  column-gap: 300px;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.grid-container-cards {
+  display: flex;
+  justify-content: center;
+}
+
+#second-card {
+  margin-top: 30%;
+}
+
+#third-card {
+  margin-top: 15%;
+}
+
+@media screen and (max-width: 1500px) {
+  .grid-container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15%;
+  }
+
+  #first-card,
+  #second-card,
+  #third-card {
+    margin-top: 10%;
+  }
+}
+
+.card {
+  width: 355px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0px 2px 0px 2px grey;
+}
+
+.container1 {
+  padding: 3px 30px;
+  padding-bottom: 10%;
+  background-color: aliceblue;
+  color: rgb(81, 81, 81);
+  height: 160px;
+}
+
+.container2 {
+  padding: 3px 30px;
+  background-color: lightcoral;
+  text-align: center;
+  color: white;
+  height: 100px;
+}
+#card2 {
+  background-color: rgb(87, 65, 187);
+}
+
+#card3 {
+  background-color: rgb(83, 203, 199);
 }
