@@ -1,0 +1,39 @@
+/*NAV BAR AREA*/
+.navbar-nav {
+  width: 100%;
+}
+
+.container-header {
+  position: relative; /* Necessary for positioning */
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: fixed; /* or position: absolute; */
+  margin-bottom: 20%;
+  margin-right: 25%;
+}
+
+.text-header {
+  /* Target the .nav-link class */
+  color: rgb(115, 113, 113);
+  font-size: 250%;
+}
+
+.h1-header {
+  font-size: 350%;
+}
+
+/* Media query for screens smaller than 768px */
+
+/* Media query for screens smaller than 576px */
+@media screen and (max-width: 700px) {
+  .text-header {
+    font-size: 150%;
+  }
+
+  .carousel-caption {
+    margin-bottom: 70%;
+  }
+}
