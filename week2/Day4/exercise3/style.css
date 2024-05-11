@@ -44,8 +44,78 @@ form {
 .row {
   text-align: center;
   margin-top: -10px;
+  width: 100.9%;
 }
-.col {
+.color {
   background-color: green;
-  padding: 20px;
+  padding: 30px 20px;
+  border-right: 0.5px solid lightgreen;
+}
+
+.fa-briefcase-medical,
+.fa-car,
+.fa-building,
+.fa-burger,
+.fa-earth-americas,
+.fa-coins {
+  font-size: 250%;
+}
+
+section {
+  margin-top: 10%;
+  justify-content: center;
+}
+
+.table {
+  width: 50%;
+}
+
+.fa-fire {
+  color: red;
+}
+
+.fa-asterisk {
+  color: goldenrod;
+}
+
+.fa-gauge-simple-high {
+  color: lightskyblue;
+}
+
+.fa-jedi {
+  color: brown;
+}
+
+.fa-meteor {
+  color: navy;
+}
+
+.fa-galactic-republic,
+.fa-certificate,
+.fa-chart-simple,
+.fa-blogger {
+  color: darkgreen;
+}
+
+.text-green {
+  color: green;
+}
+
+.btn-success {
+  display: flex;
+  justify-content: center;
+}
+
+.container-1 {
+  margin-top: 5%;
+  background-color: rgb(233, 232, 232);
+  padding-top: 5%;
+}
+.container-text-title {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.col {
+  font-size: 120%;
 }
