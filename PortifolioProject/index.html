@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <script
+      src="https://kit.fontawesome.com/8e3745808b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Portifolio Project</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -11,44 +15,37 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top bg-white">
-      <div class="container-fluid justify-content-center">
-        <a
-          class="navbar-nav navbar-brand"
-          style="color: rgb(80, 80, 80)"
-          href="#"
+    <nav class="navbar navbar-expand bg-body-tertiary fixed-top bg-white">
+      <div class="container-fluid">
+        <a class="navbar-nav navbar-brand" style="color: rgb(80, 80, 80)"
           >Sarah Garson</a
         >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
         <div
           class="collapse navbar-collapse"
           style="color: rgb(80, 80, 80)"
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <header>
+    <header id="home">
       <div class="container-header">
         <figure class="figure">
           <img
@@ -61,8 +58,301 @@
           <h1 class="text-header h1-header">Hey There, I'm Sarah!</h1>
           <br />
           <h3 class="text-header">It is a pleasure to meet you.</h3>
+          <p class="text-header p-header">
+            Welcome to my portifolio page, here I will share with you some of my
+            projects using HTML,CSS and Javascript. Fell free to explore around
+            the page and contact me if interested.
+          </p>
         </div>
       </div>
     </header>
+
+    <article>
+      <div id="about"></div>
+      <div class="container1">
+        <div class="row justify-content-around">
+          <div class="col-4 column-about">
+            <h4>About Me:</h4>
+            <br />
+
+            <p class="p-article">
+              Fun fact about me is that I starter my professional career in
+              Mechanical Engineering until I found my passion for programming
+              and development, and now I am a current Ful-Stack Development
+              student at the Developers Institute following my dream. With
+              background in Technical Support of Software, new technologies and
+              new platforms are my main curiosity, while fixing bugs and
+              troubleshooting are my favorite things to do on a daily bases.
+            </p>
+
+            <p class="p-article">
+              I am always open to learning new things and I can say that I am a
+              very curious person, which makes me feel right in the right place
+              with coding, there is always something new popping up!
+            </p>
+          </div>
+          <div class="col-4 column-about">
+            <h4>My Skills:</h4>
+            <div class="skills">
+              <div class="skills-box">HTML</div>
+              <div class="skills-box">CSS</div>
+              <div class="skills-box">Github</div>
+              <div class="skills-box">Website Design</div>
+              <div class="skills-box">Figma</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <section class="cards" id="projects">
+      <h4 class="h4-projects text-center">My Projects:</h4>
+      <p class="p-cards">
+        Right below you can see a few of my main projects since the start of my
+        Full-Stack Development studies, also by pressing each card it will take
+        you directly to its main website page.
+      </p>
+      <div class="container2">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <a
+              href="https://sarahgarson.github.io/DI-Bootcamp-Stage1/Final-Project/"
+              class="card-link"
+              target="_blank"
+            >
+              <div class="card">
+                <img
+                  src="tash-webpage.png"
+                  class="card-img-top"
+                  alt="webpage-tash-sultana"
+                />
+                <div class="card-body">
+                  <br />
+                  <h5 class="card-title" style="color: rgb(115, 113, 113)">
+                    Tribute Website- Tash Sultana
+                  </h5>
+                  <p class="card-text">
+                    Tribute Webpage created by me about the artist known as Tash
+                    Sultana. In this specific project I used HTML and CSS.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col cv-card">
+            <a
+              href="https://sarahgarson.github.io/di_exercises/week1/Day4/CV-exercise/"
+              class="card-link"
+              target="_blank"
+            >
+              <div class="card">
+                <img
+                  src="cv-webpage.png"
+                  class="card-img-top"
+                  alt="cv-webpage"
+                />
+                <div class="card-body">
+                  <br />
+                  <h5 class="card-title" style="color: rgb(115, 113, 113)">
+                    CV Webpage
+                  </h5>
+                  <p class="card-text">
+                    In this project I created a new brand CV coding the webpage
+                    myself and this time using a small amount of JavaScript. The
+                    page is responsive as well for mobile phones.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              href="https://sarahgarson.github.io/di_exercises/week2/Day4/exercise2/"
+              class="card-link"
+              target="_blank"
+            >
+              <div class="card">
+                <img src="uicookies.png" class="card-img-top" alt="webpage" />
+                <div class="card-body">
+                  <h5 class="card-title" style="color: rgb(115, 113, 113)">
+                    Bootstrap Webpage- uicookies.com
+                  </h5>
+                  <p class="card-text">
+                    Bootstrap Wepage is a webpage created mostly using bootstrap
+                    to show the power the library has and how it can help during
+                    the daily life of every web designer.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a
+              href="https://sarahgarson.github.io/di_exercises/week2/Day4/exercise3/"
+              class="card-link"
+              target="_blank"
+            >
+              <div class="card">
+                <img
+                  src="intense-webpage.png"
+                  class="card-img-top"
+                  alt="job-search-webpage"
+                />
+                <div class="card-body">
+                  <br />
+                  <h5 class="card-title" style="color: rgb(115, 113, 113)">
+                    Intense Job Search Webpage
+                  </h5>
+                  <p class="card-text">
+                    In this webpage Bootstrap and CSS were used to create a Job
+                    Search platform, the website includes a table and a search
+                    form where you can select specific job roles and their
+                    locations.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="github-paths">
+      <h5 class="h5-github-paths text-center">
+        Here are the direct paths for you to take a look at how I wrote the
+        codes for the projects above found in my Github profile!
+      </h5>
+      <div
+        class="btn-toolbar justify-content-center"
+        role="toolbar"
+        aria-label="Toolbar with button groups"
+      >
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn">
+            <a
+              href="https://github.com/sarahgarson/DI-Bootcamp-Stage1/tree/main/Final-Project"
+              target="_blank"
+              >Tribute Webpage</a
+            >
+          </button>
+        </div>
+        <div class="btn-group me-2" role="group" aria-label="Second group">
+          <button type="button" class="btn">
+            <a
+              href="https://github.com/sarahgarson/di_exercises/tree/main/week1/Day4/CV-exercise"
+              target="_blank"
+              >CV Webpage</a
+            >
+          </button>
+        </div>
+        <div class="btn-group me-2" role="group" aria-label="Third group">
+          <button type="button" class="btn">
+            <a
+              href="https://github.com/sarahgarson/di_exercises/tree/main/week2/Day4/exercise2"
+              target="_blank"
+              >Bootstrap Webpage</a
+            >
+          </button>
+        </div>
+        <div class="btn-group me-2" role="group" aria-label="Fourth group">
+          <button type="button" class="btn">
+            <a
+              href="https://github.com/sarahgarson/di_exercises/tree/main/week2/Day4/exercise3"
+              target="_blank"
+              >Intense Job Search Webpage</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container-header">
+        
+        <figure class="figure">
+          <img
+            src="jessy-smith-zFOm6KzA-7g-unsplash.jpg"
+            class="figure-img img-fluid rounded"
+            alt="background-white-picture"
+          />
+        </figure>
+        <div class="container-contacts">
+        <div class="carousel-caption">
+          <div class="h1-container">
+            <h1 class="h1-contact">Want to get in touch?</h1>
+            <h1 class="h1-contact">Here are some places you can find me!</h1>
+          </div>
+          <div class="icons">
+            <a
+          href="https://www.linkedin.com/in/sarah-garson-3563161bb/"
+          class="contact"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://wa.me/9720545207454?text=Hello%20there!" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="mailto:your.email@example.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="#" onclick="copyToClipboard('+9720545207454')">
+          <i class="fa-solid fa-phone-volume"></i>
+        </a>
+            
+        </div>
+      </div>
+    </div>
+      
+    </section>
+
+    <script>
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text)
+          .then(() => {
+            alert('Phone number copied successfully!');
+          })
+          .catch(err => {
+            console.error('Failed to copy: ', err);
+          });
+      }
+    </script>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="contact-social">
+        <a
+          href="https://www.linkedin.com/in/sarah-garson-3563161bb/"
+          class="contact-social-link"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <div class="contat-social">
+        <a
+          href="https://github.com/sarahgarson"
+          class="contact-social-link"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="footer-grid">
+        <!-- First column -->
+        <div class="footer-column">
+          <h3>Column 1</h3>
+          <p>This is the content of the first column.</p>
+        </div>
+        <!-- Second column -->
+        <div class="footer-column">
+          <h3>Column 2</h3>
+          <p>This is the content of the second column.</p>
+        </div>
+      </div>
+    </footer>
+
+
   </body>
 </html>
