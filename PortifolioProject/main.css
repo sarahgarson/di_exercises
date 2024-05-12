@@ -244,8 +244,285 @@ footer {
   padding-bottom: 2%;
 }
 
+.footer-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  padding-top: 5%;
+}
+
 .container-footer {
   padding-top: 8%;
 }
 
 /*Media queries fot the whole page*/
+
+/* Add media queries for responsiveness */
+
+/* For smaller devices (phones) */
+
+@media (min-width: 100px) {
+  .navbar-nav {
+    font-size: 80%;
+  }
+
+  .container-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+  }
+
+  .header-hs {
+    font-size: 50%;
+  }
+
+  .h1-header {
+    font-size: 250%;
+    margin: 0px;
+  }
+
+  .container1 {
+    font-size: 90%;
+  }
+
+  .btn-group {
+    background-color: rgb(159, 156, 156);
+    border-radius: 5px;
+    width: 20%;
+  }
+
+  button > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 80%;
+  }
+
+  .h1-contact {
+    font-size: 100%;
+  }
+
+  .icons i {
+    font-size: 80%;
+    color: white;
+  }
+
+  .icons {
+    display: flex; /* Use flexbox */
+    gap: 20px; /* Add space between icons */
+    margin-bottom: 28%;
+    justify-content: center;
+  }
+
+  footer {
+    font-size: 60%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 300px) {
+  .container-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 0%;
+  }
+
+  .header-hs {
+    font-size: 50%;
+    margin-top: 100%;
+  }
+
+  .h1-header {
+    font-size: 250%;
+  }
+
+  .container1 {
+    font-size: 90%;
+  }
+
+  .btn-group {
+    background-color: rgb(159, 156, 156);
+    border-radius: 5px;
+    width: 20%;
+  }
+
+  button > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 80%;
+  }
+
+  .h1-contact {
+    font-size: 100%;
+  }
+
+  .icons i {
+    font-size: 80%;
+    color: white;
+  }
+
+  .icons {
+    display: flex; /* Use flexbox */
+    gap: 20px; /* Add space between icons */
+    margin-bottom: 28%;
+    justify-content: center;
+  }
+
+  footer {
+    font-size: 60%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 850px) {
+  .container-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .header-hs {
+    font-size: 60%;
+    margin-top: 100%;
+  }
+
+  .h1-header {
+    font-size: 200%;
+  }
+
+  .icons i {
+    font-size: 100%;
+    color: white;
+  }
+
+  footer {
+    font-size: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 800px) {
+  .container-header {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-hs {
+    font-size: 100%;
+  }
+
+  .h1-header {
+    font-size: 250%;
+  }
+
+  .h1-contact {
+    font-size: 150%;
+  }
+
+  .btn-group {
+    background-color: rgb(159, 156, 156);
+    border-radius: 5px;
+    width: 20%;
+  }
+
+  button > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 120%;
+  }
+
+  .icons i {
+    font-size: 180%;
+    color: white;
+  }
+
+  .icons {
+    display: flex; /* Use flexbox */
+    gap: 20px; /* Add space between icons */
+    margin-bottom: 28%;
+    justify-content: center;
+  }
+}
+
+/* For large devices (desktops) */
+@media (min-width: 1000px) {
+  .container-header {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-hs {
+    font-size: 100%;
+    margin-bottom: 10%;
+  }
+
+  .h1-header {
+    font-size: 350%;
+  }
+
+  .h1-contact {
+    font-size: 180%;
+  }
+
+  .btn-group {
+    background-color: rgb(159, 156, 156);
+    border-radius: 5px;
+    width: 15%;
+  }
+
+  button > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 130%;
+  }
+
+  .icons i {
+    font-size: 230%;
+    color: white;
+  }
+
+  .icons {
+    display: flex; /* Use flexbox */
+    gap: 30px; /* Add space between icons */
+    margin-bottom: 28%;
+    justify-content: center;
+  }
+
+  footer {
+    font-size: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-header {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-hs {
+    font-size: 100%;
+    margin-bottom: 25%;
+  }
+
+  .h1-header {
+    font-size: 300%;
+  }
+
+  .icons i {
+    font-size: 250%;
+    color: white;
+  }
+
+  .icons {
+    display: flex; /* Use flexbox */
+    gap: 30px; /* Add space between icons */
+    margin-bottom: 30%;
+    justify-content: center;
+  }
+}
