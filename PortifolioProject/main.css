@@ -261,7 +261,7 @@ footer {
 
 /* For smaller devices (phones) */
 
-@media (min-width: 100px) {
+@media (max-width: 300px) {
   .navbar-nav {
     font-size: 80%;
   }
@@ -322,6 +322,10 @@ footer {
 }
 
 @media (min-width: 300px) {
+  .navbar-nav {
+    font-size: 110%;
+  }
+
   .container-header {
     position: relative;
     width: 100%;
