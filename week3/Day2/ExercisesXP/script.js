@@ -34,8 +34,9 @@ For example : I watched 3 series : black mirror, money heist, and the big bang t
 
 const myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
 let myWatchedSeriesLength = myWatchedSeries.length;
-let myWatchedSeriesSentence =
-  "black mirror, money heist, and the big bang theory";
+let myWatchedSeriesSentence = myWatchedSeries.toString(
+  "black mirror, money heist, and the big bang theory"
+);
 let fullSentence =
   "I watched " + myWatchedSeriesLength + " series: " + myWatchedSeriesSentence;
 console.log(fullSentence);
@@ -66,15 +67,15 @@ console.log(myWatchedSeries);
 
 //Instructions
 
-/* 1. Store a celsius temperature into a variable.
-
-2. Convert it to fahrenheit and console.log <temperature>°C is <temperature>°F.
-
-Hint : Should you create another variable to hold the temperature in fahrenheit? (ie. point 2)
-
-Hint: To convert a temperature from celsius to fahrenheit : Divide it by 5, then multiply it by 9, then add 32*/
+//1. Store a celsius temperature into a variable.
 
 let celsiusTemp = 20;
+//2. Convert it to fahrenheit and console.log <temperature>°C is <temperature>°F.
+
+//Hint : Should you create another variable to hold the temperature in fahrenheit? (ie. point 2)
+
+//Hint: To convert a temperature from celsius to fahrenheit : Divide it by 5, then multiply it by 9, then add 32
+
 let fahrenheitTemp = (20 / 5) * 9 + 32;
 console.log(celsiusTemp + "°C" + " is " + fahrenheitTemp + "°F");
 
