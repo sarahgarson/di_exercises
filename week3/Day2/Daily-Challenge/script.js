@@ -38,5 +38,5 @@ const moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 
 //1. Access and then console.log “Oranges”.
 
-let oranges = moreFruits[1][1];
+let oranges = moreFruits[1][1][0];
 console.log(oranges);
