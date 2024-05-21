@@ -73,19 +73,21 @@ const users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
 
 // 1. Using the array above, console.log the number of users that are connected to the group chat based on the following rules:
 
+let usersLength = users.length;
+
 //If there is no users (the users array is empty), console.log “no one is online”.
 
-if (users === 0) {
+if (usersLength === 0) {
   console.log("no one is online");
 }
 
 //If there is 1 user, console.log “<name_user> is online”.
-else if (users === 1) {
+else if (usersLength === 1) {
   console.log(users[0] + " is online");
 }
 
 //If there are 2 users, console.log “<name_user1> and <name_user2> are online”.
-else if (users === 2) {
+else if (usersLength === 2) {
   console.log(users[0][1] + " are online");
 }
 
@@ -94,6 +96,11 @@ else if (users === 2) {
 //For example, if there are 5 users, it should display:
 else {
   console.log(
-    users[0] + ", " + users[1] + " and " + users.length + " more are online"
+    users[0] +
+      ", " +
+      users[1] +
+      " and " +
+      (usersLength - 2) +
+      " more are online"
   );
 }
