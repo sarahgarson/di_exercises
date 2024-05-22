@@ -10,10 +10,10 @@
 
 let star = "";
 
-/*for (i = 0; i < 6; i++) {
+for (i = 0; i < 6; i++) {
   star += "*";
   console.log(star);
-}*/
+}
 
 //second:using two loops
 
