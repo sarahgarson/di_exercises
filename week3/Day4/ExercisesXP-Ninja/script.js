@@ -11,7 +11,7 @@ let person2BirthYear = 2001;
 let agePerson1 = 2024 - person1BirthYear;
 let agePerson2 = 2024 - person2BirthYear;
 
-let calcAge = person2BirthYear + agePerson1 / 2;
+let calcAge = person2BirthYear + agePerson1;
 console.log(calcAge);
 
 // Exercise 2 : Zip Codes
