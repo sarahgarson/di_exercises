@@ -105,7 +105,6 @@ for (let i = 0; i < colors.length; i++) {
 //Hint : Check the data type you receive from the prompt (ie. Use the typeof method)
 
 let number = prompt("Write a number! :)");
-number = Number(number);
 
 console.log(typeof number);
 

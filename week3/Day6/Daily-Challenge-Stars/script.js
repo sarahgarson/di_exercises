@@ -17,12 +17,13 @@ for (i = 0; i < 6; i++) {
 
 //second:using two loops
 
-for (i = 0; i < 1; i++) {
-  let star2 = "";
-  console.log(star2);
+let stars2 = "";
 
-  for (j = 0; j < 6; j++) {
-    star2 += "*";
-    console.log(star2);
+for (let i = 1; i <= 6; i++) {
+  for (let j = 1; j <= i; j++) {
+    stars2 += "*";
   }
+  stars2 += "\n";
 }
+
+console.log(stars2);
