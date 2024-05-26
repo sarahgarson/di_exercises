@@ -9,8 +9,11 @@
 // 2. The function should console.log a sentence about you (ie. your name, age, hobbies ect…).
 
 function infoAboutMe() {
+  let name = "Sarah";
+  let age = 22;
+  let hobby = "surf";
   console.log(
-    "Hey There, my name is Sarah, I am 22 years old and I love to surf"
+    `Hey There, my name is ${name}, I am ${age} years old and I love to ${hobby}.`
   );
 }
 
@@ -235,6 +238,14 @@ function changeEnough(itemPrice, amountOfChange) {
 changeEnough(4.25, [25, 20, 5, 0]);
 
 // 🌟 Exercise 6 : Vacations Costs
+
+//----------------------------------------------------------------------------------//
+//
+
+//PS:PART OF THE CODE IS WITH '//' SINCE THE LAST PART ASKED US TO REARRANGE THE CODE FOLLOWING WHAT WAS ASKED!!!!
+
+//
+//----------------------------------------------------------------------------------//
 
 // Instructions
 
