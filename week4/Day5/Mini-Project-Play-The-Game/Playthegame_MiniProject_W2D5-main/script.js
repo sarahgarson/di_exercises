@@ -10,9 +10,9 @@
 // 3. In the JS file, create a function called playTheGame() that takes no parameter.
 // In the function, start by asking the user if they would like to play the game (Hint: use the built-in confirm() function).
 
-// a. If the answer is false, alert “No problem, Goodbye”.
+// a) If the answer is false, alert “No problem, Goodbye”.
 
-// b. If his answer is true, follow these steps:
+// b) If his answer is true, follow these steps:
 
 // I - Ask the user to enter a number between 0 and 10 (Hint: use the built-in prompt() function). You then have to check the validity of the user’s number :
 
@@ -20,33 +20,56 @@
 //  - If the user didn’t enter a number between 0 and 10 alert “Sorry it’s not a good number, Goodbye”.
 //  - Else (ie. he entered a number between 0 and 10), create a variable named computerNumber where the value is a random number between 0 and 10 (Hint: Use the built-in Math.random() function). Make sure that the number is rounded.
 
+
+//This part is coded since the bonus I had to recode this first part 
+
+
+// 2.-------------------------------------------------------------------------------//
+
 /*function playTheGame() {
   let confirmation = confirm("Hey there, would you like to play a game");
 
-  // a. If the answer is false, alert “No problem, Goodbye”.
+//----------------------------------------------------------------------------------//
+
+  //3. a) If the answer is false, alert “No problem, Goodbye”.
+
+
   if (confirmation === false) {
     alert(`No problem, Goodbye`);
     return;
   }
+//----------------------------------------------------------------------------------//
 
-  // b. If his answer is true, follow these steps:
+
+  // 3. b) If his answer is true, follow these steps:
   // I - Ask the user to enter a number between 0 and 10 (Hint: use the built-in prompt() function). You then have to check the validity of the user’s number :
+
   let userNumber = prompt(
     `Yay amazing!! So lets get it started: please enter a number from 0 to 10`
   );
   userNumber = parseFloat(userNumber);
 
+
+//----------------------------------------------------------------------------------//
+
   //  - If the user didn’t enter a number (ie. if he entered another data type) alert “Sorry Not a number, Goodbye”:
+
   if (isNaN(userNumber)) {
     alert(`Sorry not a number, Goodbye...`);
     return;
 
+//----------------------------------------------------------------------------------//
+
     //  - If the user didn’t enter a number between 0 and 10 alert “Sorry it’s not a good number, Goodbye”:
+
   } else if (userNumber < 0 || userNumber > 10) {
     alert("Sorry it's not a good number, Goodbye...");
     return;
 
+//----------------------------------------------------------------------------------//
+
     //  - Else (ie. he entered a number between 0 and 10), create a variable named computerNumber where the value is a random number between 0 and 10 (Hint: Use the built-in Math.random() function). Make sure that the number is rounded:
+
   } else {
     let computerNumber = Math.floor(Math.random() * 11);
     compareNumbers(userNumber, computerNumber);
@@ -54,6 +77,11 @@
 }
 
 playTheGame();*/
+
+
+//----------------------------------------------------------------------------------//
+
+
 
 // Second Part
 
