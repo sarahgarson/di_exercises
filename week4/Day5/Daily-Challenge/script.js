@@ -68,24 +68,27 @@ For example,
 
 //3. The song should end with “0 bottle of beer on the wall” or “no bottle of beer on the wall”.
 
-function song(number) {
-  if (number === 0) {
-    console.log(`No bottle of beer on the wall`);
+function song(number, takeDown) {
+  if (number <= 0) {
+    return;
   } else {
     let bottles = pluralOrNot(number);
-    let nextBottles = pluralOrNot(number - 1);
-    let pronouns = pronounsItThem(number);
-    let nextBottlesPronouns = pronounsItThem(number - 1);
+    let nextBottles = pluralOrNot(number - takeDown);
+    let pronouns = pronounsItThem(number - takeDown);
 
     console.log(`${number} ${bottles} of beer on the wall`);
     console.log(`${number} ${bottles} of beer`);
-    console.log(
-      `Take ${number === 1 ? "it" : "one"} down, pass ${pronouns} around`
-    );
-    console.log(`${number - 1} ${nextBottles} of beer on the wall.`);
+    console.log(`Take ${takeDown} down, pass ${pronouns} around`);
+    console.log(`${number - takeDown} ${nextBottles} of beer on the wall.`);
   }
 }
 
-for (let i = userNumber; i >= 0; i--) {
-  song(i);
+let takeDown = 1;
+if (userNumber <= 0) {
+  console.log(`No bottle of beer on the wall`);
+} else {
+  for (let i = userNumber; i > 0; i -= takeDown++) {
+    song(i, takeDown);
+  }
+  console.log(`No bottle of beer on the wall`);
 }
