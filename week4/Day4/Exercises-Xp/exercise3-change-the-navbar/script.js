@@ -33,7 +33,7 @@ let ul = document.querySelector(`ul`); // before I had written document.body.fir
 let newLi = document.createElement(`li`);
 
 //b.
-let textNode = document.createTextNode(`Logout`); // why isnt it showing as a link?
+let textNode = document.createTextNode(`Logout`);
 
 //c.
 newLi.appendChild(textNode);

@@ -40,6 +40,11 @@ let arrayOfBooks = document.querySelector(`.listBooks`);
 // a. Using the DOM, render the books inside an HTML table (the HTML table must be added to the <div> created in part 1).
 
 let table = document.createElement(`table`);
+let tableHead = document.createElement(`tableHead`);
+let tableBody = document.createElement(`tableBody`);
+
+table.appendChild(tableHead);
+table.appendChild(tableBody);
 
 //For each book :
 // 1. You have to display the book’s title and the book’s author.
@@ -47,7 +52,7 @@ let table = document.createElement(`table`);
 // II - The width of the image has to be set to 100px.
 // III - If the book is already read. Set the color of the book’s details to red.
 
-for (i = 0; i < allBooks; i++) {
+for (i = 0; i < allBooks.length; i++) {
   let book = allBooks[i];
   let row = document.createElement(`tr`);
 
@@ -67,7 +72,7 @@ for (i = 0; i < allBooks; i++) {
     titleAuthorCell.style.color = "red";
   }
 
-  table.appendChild(row);
+  tableBody.appendChild(row);
 }
 
 arrayOfBooks.appendChild(table);
