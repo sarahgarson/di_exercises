@@ -58,9 +58,9 @@ document.addEventListener(`DOMContentLoaded`, function () {
     document.body.appendChild(shuffleButton);
 
     let storyTemplates = [
-      "Once upon a time, a [adjective] [noun] met a [noun] named [person] in [place]. They decided to [verb] together.",
+      "Once upon a time, a [adjective] [noun] met [person] in [place]. They decided to [verb] together.",
       "There was a [adjective] [noun] who lived in [place]. One day, they met [person] and they decided to [verb] together.",
-      "In [place], there was a [adjective] [noun]. [Person] came along and they decided to [verb] together.",
+      "In [place], there was a [adjective] [noun]. [person] came along and they decided to [verb] together.",
     ];
 
     function generateRandomStory() {
