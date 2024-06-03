@@ -1,0 +1,30 @@
+* {
+  background-color: rgb(106, 118, 216);
+}
+
+body {
+  margin: 0;
+}
+
+.mainBox {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.mainBox p {
+  margin: 0;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  color: rgb(105, 188, 182);
+  line-height: 0;
+}
+
+.newbox {
+  animation: expand 0.5s ease-in-out;
+}
