@@ -244,9 +244,11 @@ getBoldItems();
 // 5. Call the function highlight() on mouseover (ie. when the mouse pointer is moved onto the paragraph), and the function returnItemsToDefault() on mouseout (ie. when the mouse pointer is moved out of the paragraph). Look at this example
 
 // Call the function highlight() on mouseover (ie. when the mouse pointer is moved onto the paragraph)
+
 paragraph.addEventListener("mouseover", highlight);
 
 // Call the function returnItemsToDefault() on mouseout (ie. when the mouse pointer is moved out of the paragraph)
+
 paragraph.addEventListener("mouseout", returnItemsToDefault);
 
 
