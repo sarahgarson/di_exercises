@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8e3745808b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <h3 class="title">TO-DO LIST</h3>
+    <div class="container">
+      <!-- had to add it so the input field and the add button appear above the list-->
+      <form id="form">
+        <input type="text" name="task" placeholder="new task..." />
+        <button id="submit">ADD</button>
+      </form>
+
+      <div class="list-tasks"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

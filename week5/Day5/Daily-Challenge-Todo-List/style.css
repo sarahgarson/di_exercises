@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ff0000, #ff7e7e);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  position: absolute; /* made the text on top of the container */
+  font-size: 170%;
+  margin-bottom: 360px;
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 320px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex-grow: 1;
+  margin-right: 10px;
+  outline: none;
+}
+
+button#submit {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #7cbdf3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button#submit:hover {
+  background-color: #455fa0;
+}
+
+.list-tasks {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.list-tasks ul {
+  padding: 0;
+  margin: 0;
+}
+
+.list-tasks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-tasks li:last-child {
+  border-bottom: none;
+}
+
+.list-tasks input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.list-tasks .delete-button {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.list-tasks .delete-button:hover {
+  color: #ff3b3b;
+}
+
+.list-tasks label {
+  flex-grow: 1;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+/* :checked: it's a pseudo-class that targets the checkbox input field when it's checked.
++ label: Its an adjacent sibling combinator that targets the label element that immediately follows the checkbox input field.*/
+.list-tasks input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #ccc;
+}
