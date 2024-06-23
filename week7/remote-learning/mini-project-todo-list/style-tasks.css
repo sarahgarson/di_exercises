@@ -1,0 +1,56 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: grey;
+  margin-top: 10%;
+  margin-bottom: 12%;
+  font-size: 330%;
+  font-weight: 200;
+}
+
+.task {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 3px 5px rgb(197, 193, 193);
+  padding: 10px;
+  margin: 5% 5%;
+  cursor: pointer;
+}
+.task.completed {
+  background-color: green;
+  color: white;
+}
+.task.uncompleted {
+  background-color: red;
+  color: white;
+}
+.task.expired {
+  background-color: gray;
+  color: white;
+}
+.description {
+  display: none;
+}
+
+.delete-btn,
+.edit-btn {
+  top: 10px;
+  background-color: #af0000;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 2%;
+}
+.delete-btn {
+  right: 10px;
+}
+.edit-btn {
+  right: 50px;
+  background-color: #4d94ff;
+}
