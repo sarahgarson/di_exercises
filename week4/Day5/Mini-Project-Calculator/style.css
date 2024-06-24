@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5dc;
+}
+
+.calculator {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 450px;
+  padding: 20px;
+  background-color: #f4f1c8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.screen {
+  height: 50px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/*:nth-child(n + 1): This pseudo-class targets every child element starting from the first one (1st, 2nd, 3rd, ..., nth).
+:nth-child(-n + 12): This pseudo-class targets elements from the start up to the 12th one.
+
+Combining these two pseudo-classes (:nth-child(n + 1):nth-child(-n + 12)) means that it selects all buttons from the 1st to the 12th child inclusive.
+*/
+button:nth-child(n + 1):nth-child(-n + 12) {
+  background-color: #66cc66;
+}
+
+/*button: This targets all button elements within the parent container.
+:nth-child(n + 13): This pseudo-class targets every child element starting from the 13th one (13th, 14th, 15th, ..., nth).
+:nth-child(-n + 16): This pseudo-class targets elements from the start up to the 16th one.
+Combining these two pseudo-classes (:nth-child(n + 13):nth-child(-n + 16)) means that it selects all buttons from the 13th to the 16th child inclusive*/
+
+button:nth-child(n + 13):nth-child(-n + 16) {
+  background-color: #ff9900;
+}
+
+button.reset {
+  background-color: #3366cc;
+}
+
+button.clear {
+  background-color: #ff3300;
+}
+
+.reset,
+.clear {
+  grid-column: span 2;
+  color: white;
+}

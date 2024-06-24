@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 1. Create a HTML file for your calculator and a JS file for the calculator’s functionality.-->
+    <div class="calculator">
+      <div class="screen" id="screen">0</div>
+      <div class="buttons">
+        <button onclick="number('0');">0</button>
+        <button onclick="number('1');">1</button>
+        <button onclick="number('2');">2</button>
+        <button onclick="number('3');">3</button>
+        <button onclick="number('4');">4</button>
+        <button onclick="number('5');">5</button>
+        <button onclick="number('6');">6</button>
+        <button onclick="number('7');">7</button>
+        <button onclick="number('8');">8</button>
+        <button onclick="number('9');">9</button>
+        <button onclick="number('.');">.</button>
+        <button onclick="operator('+');">+</button>
+        <button onclick="operator('-');">-</button>
+        <button onclick="operator('*');">X</button>
+        <button onclick="operator('/');">/</button>
+        <button onclick="equal();">=</button>
+        <button onclick="resetCalculator();" class="reset">reset</button>
+        <button onclick="clearScreen();" class="clear">clear</button>
+      </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
