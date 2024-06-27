@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mini-project.css" />
+    <title>Mini Project Random Quote Generator</title>
+  </head>
+  <body>
+    <!-- PART I: QUOTE GENERATOR-->
+
+    <!--1. Create an HTML file, that contains a section (for now the section is empty), and a button “Generate Quote”.-->
+    <section id="quote-display"></section>
+
+    <button id="generate-btn">Generate Quote</button>
+
+    <!-- PART II : ADD BUTTONS
+
+
+   1.    In the HTML file, create a form with the inputs “Quote” and “Author” and a button. So when you click on the button, you can add a new quote to the array of object.
+   
+   Important: Don’t forget to set the id of the new quotes-->
+    <p>- would you like to add a new quote to our list?</p>
+    <form>
+      <input type="text" id="quote-input" placeholder="Quote" />
+      <input type="text" id="author-input" placeholder="Author" />
+      <button id="add-btn">Add Quote</button>
+    </form>
+
+    <!-- 2. In the HTML file, under the displayed quote, create a few more buttons:
+
+ a. A button that gives the number of character inside each quote (space included)
+b. A button that gives the number of character inside each quote (space NOT included)
+c. A button that gives the number of words in each quote
+d. A button “Like” for the user to like a quote. Hint : add a new key to each object that will represent the number of “likes”.
+-->
+
+    <button id="character-count">Character Count (with spaces)</button>
+    <button id="character-count-no-spaces">
+      Character Count (without spaces)
+    </button>
+    <button id="word-count">Word Count</button>
+    <button id="like-btn">Like</button>
+
+    <!-- PART III: FILTER FORM
+1. Create a form, that will filter the quotes depending on the name of the author. When the button of the form is clicked, display all the quotes from this specific author. 
+
+
+2. Instead of showing all the quotes of the specific author. Show only one quote, and add a button “Previous” and a button “Next” that will display the next or previous quote.-->
+
+    <p>- looking for something specific? try filtering by author!</p>
+
+    <form id="filter-form">
+      <input type="text" id="filter-input" placeholder="Filter by author" />
+      <button id="filter-btn">Filter Quotes</button>
+    </form>
+
+    <button id="previous-btn">Previous</button>
+    <button id="next-btn">Next</button>
+
+    <script src="mini-project.js"></script>
+  </body>
+</html>
