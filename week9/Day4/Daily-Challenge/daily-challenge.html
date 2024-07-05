@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Instructions
+
+1. Create a form with two fields (name, last name) and a submit button.
+
+2. When you click the Send button, retrieve the data from the inputs, and append it on the DOM as a JSON string.
+-->
+
+    <form method="GET" id="userForm">
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        placeholder="Enter your last name"
+      />
+
+      <button id="submitBtn" type="submit" value="Send">Send</button>
+    </form>
+
+    <script src="daily-challenge.js"></script>
+  </body>
+</html>
