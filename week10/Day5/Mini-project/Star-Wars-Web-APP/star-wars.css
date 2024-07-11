@@ -1,0 +1,58 @@
+/*5. You can use your own css to style the website as you see fit */
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-image: url("bryan-goff-f7YQo-eYHdM-unsplash\ \(1\).jpg");
+  background-size: cover;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 60px;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+  font-family: "Star Wars", sans-serif;
+  color: rgb(250, 250, 0);
+}
+
+.character-info {
+  border: 2px solid rgb(9, 9, 155);
+  padding: 20px;
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 20px;
+  width: 20%;
+  text-align: center;
+}
+
+.find-character-btn {
+  background-color: rgb(34, 14, 148);
+  border: none;
+  padding: 6px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+
+.find-character-btn:hover {
+  background-color: rgb(0, 123, 255);
+}
+
+.loading {
+  font-size: 20px;
+  color: yellow;
+}
+
+.error {
+  font-size: 20px;
+  color: red;
+}
