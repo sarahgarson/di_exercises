@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-image: url(kenny-eliason-8fDhgAN5zG0-unsplash.jpg);
+  background-size: cover;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background-color: rgba(5, 37, 5, 0.5);
+  padding: 5px 55px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 20%;
+  color: azure;
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+select,
+input,
+button {
+  padding: 7px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+label {
+  color: white;
+}
+
+select:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.result {
+  color: white;
+}

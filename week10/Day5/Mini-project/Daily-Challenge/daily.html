@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="daily.css" />
+    <title>Daily Script</title>
+  </head>
+
+  <!-- FORM DATA FOR CURRENCY CONVERTER-->
+  <body>
+    <div class="container">
+      <h1 class="title">Currency Converter</h1>
+      <div class="converter">
+        <div>
+          <label for="fromCurrency">From:</label>
+          <select id="fromCurrency"></select>
+        </div>
+        <div>
+          <label for="toCurrency">To:</label>
+          <select id="toCurrency"></select>
+        </div>
+        <div>
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" placeholder="Enter amount" />
+        </div>
+        <button id="convertButton">Convert</button>
+
+        <div>
+          <h2 class="result">Converted Amount:</h2>
+          <p id="result">0.00</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="daily.js"></script>
+  </body>
+</html>
