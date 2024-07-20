@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Emoji Guessing Game</title>
+  </head>
+  <body>
+
+
+    <form action="/api/question" method="POST">
+      <h1 class="title">Emoji Guessing Game</h1>
+
+      <div class="emoji"></div>
+      <div class="options"></div>
+      <div class="feedback"></div>
+      <div class="score">Score: 0</div>
+
+    </form>
+
+
+
+    <script>
+
+      // Function to fetch a new emoji question from the server
+      async function fetchQuestion() {
+
+        // Send a GET request to the /api/question endpoint to get a new emoji question
+        const res = await fetch("/api/question");
+
+        // Convert the response to JSON format
+        const data = await res.json();
+
+        // Update the page with the new emoji
+        document.querySelector(".emoji").textContent = data.emoji;
+        //wanted to make the emoji a little bigger :)
+        document.querySelector(".emoji").style.fontSize = "3rem";
+
+        // Get the div element where the options will be displayed
+        const optionsDiv = document.querySelector(".options");
+
+        // Clear any existing options in the optionsDiv
+        optionsDiv.innerHTML = "";
+
+        // Loop through the options received from the server
+        data.options.forEach((option) => {
+
+          // Create a new button element for each option
+          const button = document.createElement("button");
+
+          // Set the button's text to the option's name
+          button.textContent = option.name;
+
+          // Add an event listener to the button to handle clicks
+          // When the button is clicked, send a POST request to the /api/guess endpoint
+          button.onclick = (event) => {
+            event.preventDefault();
+            submitGuess(option.name);
+          };
+
+          // Add the button to the optionsDiv
+          optionsDiv.appendChild(button);
+        });
+      }
+
+
+
+      // Function to submit the player's guess to the server
+      async function submitGuess(guess) {
+
+        // Send a POST request to the /api/guess endpoint with the player's guess
+        const res = await fetch("/api/guess", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json", // Indicate that the body contains JSON
+          },
+          body: JSON.stringify({ guess }),
+        });
+
+        const data = await res.json();
+
+        // Get the div element where feedback will be displayed
+        const feedbackDiv = document.querySelector(".feedback");
+
+        // Update the feedbackDiv with a message indicating whether the guess was correct or incorrect
+        feedbackDiv.textContent = data.correct ? "Correct!" : "Incorrect!";
+
+        // Update the score on the page
+        document.querySelector(".score").textContent = `Score: ${data.score}`;
+
+        // Fetch a new emoji question to present to the player
+        fetchQuestion();
+
+      }
+
+
+      // Initial call to fetch a question when the page loads
+      fetchQuestion();
+
+
+
+
+    </script>
+  </body>
+</html>
