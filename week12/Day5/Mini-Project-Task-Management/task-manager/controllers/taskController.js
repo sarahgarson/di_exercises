@@ -48,7 +48,7 @@ if(!task) return res.status(404).json({message: 'The task was not found'})
 
 
 //controllers function to create a new task
-export const createtask = async (req,res,next) => {
+export const createTask = async (req,res,next) => {
 try{
 
   const tasks = await fs.readJson(tasksFilePath);
