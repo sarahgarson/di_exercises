@@ -110,7 +110,7 @@ export const deleteTask = async (req,res,next) => {
     const tasks = await fs.readJson(tasksFilePath);
 
     //filtering out the tasks with the ids
-    const newTasks = tasks.filer(t => t.id !=== parseInt(req.params.id));
+    const newTasks = tasks.filer(t => t.id !== parseInt(req.params.id));
 
     //if no tasks got deleted: erro 404
     if(newTasks.length === tasks.length) return res.status(404.).json({message:'Task not found'});
