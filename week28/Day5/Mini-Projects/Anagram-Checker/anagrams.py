@@ -33,7 +33,6 @@ def main():
         if choice == "1":
             word = input("Enter a word: ").strip().upper()
             
-            # Validate input
             if not word:
                 print("Please enter a word.")
                 continue
